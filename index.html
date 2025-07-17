@@ -558,7 +558,7 @@
                 // Change to green background after 0.7 seconds
                 timeoutIds.push(setTimeout(() => {
                     copyStatus.classList.add('copied');
-                }, 700));
+                }, 100));
                 
                 // Move index based on direction
                 currentIndex = isReverseMode ? currentIndex - 1 : currentIndex + 1;
@@ -572,7 +572,7 @@
                 copyNextBtn.classList.remove('copied');
                 isProcessing = false;
                 updateUI();
-            }, 700));
+            }, 100));
         }
 
         // Copy the previous item again
@@ -600,7 +600,7 @@
                 // Change to green background after 0.7 seconds
                 timeoutIds.push(setTimeout(() => {
                     copyStatus.classList.add('copied');
-                }, 700));
+                }, 100));
                 
                 // Update current index
                 currentIndex = prevIndex;
@@ -614,7 +614,7 @@
                 copyBackBtn.classList.remove('copied');
                 isProcessing = false;
                 updateUI();
-            }, 700));
+            }, 100));
         }
 
         // Reset to the first item
